@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'org.kata'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation('org.junit.jupiter:junit-jupiter-api:5.1.0')
+    testRuntimeOnly('org.junit.jupiter:junit-jupiter-engine:5.1.0')
+    testCompile group: 'org.assertj', name: 'assertj-core', version: '3.11.1'
+}
